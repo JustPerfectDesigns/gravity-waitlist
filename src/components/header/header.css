@@ -1,0 +1,39 @@
+/*=============== HEADER ===============*/
+.header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+	background-color: transparent;
+}
+
+/*=============== NAV ===============*/
+.nav {
+	height: 3.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__logo {
+	width: 90px;
+}
+
+.download-btn {
+	padding: 12px 25px;
+}
+
+/* ============== BREAKPOINTS ============== */
+/* For large devices */
+@media screen and (min-width: 767px) {
+	.nav {
+		height: 4.5rem;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	.nav {
+		height: 5rem;
+	}
+}

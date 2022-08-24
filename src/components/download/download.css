@@ -1,0 +1,104 @@
+.download {
+	background-color: var(--bg-white-color);
+}
+
+.download__title {
+	font-size: var(--h1-font-size);
+	line-height: unset;
+}
+
+.download__btns {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 1rem;
+}
+
+.app__store-btn {
+	display: inline-block;
+	padding: 0 0.5rem;
+}
+
+.btn-store {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	background-color: #f8f8f8;
+	border: 1.6px solid #11111122;
+	border-radius: 50px;
+}
+
+.btn-store:disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.btn-store-icon img {
+	width: 18px;
+}
+
+.btn-store-text {
+	display: inline-block;
+	color: var(--title-color);
+	font-size: var(--small-font-size);
+	text-transform: capitalize;
+	text-align: left;
+	margin-left: 1rem;
+}
+
+/* ============== BREAKPOINTS ============== */
+@media screen and (min-width: 424px) {
+	.download__btns {
+		flex-direction: row;
+		row-gap: unset;
+	}
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+	.download__title {
+		width: 300px;
+		margin: 0 auto 2rem;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.download {
+		padding-bottom: 5rem;
+	}
+}
+
+@media screen and (min-width: 968px) {
+	.download__title {
+		width: 650px;
+		margin-bottom: 4.5rem;
+		font-size: var(--biggest-font-size);
+	}
+
+	.download__btns {
+		margin-bottom: 3rem;
+	}
+
+	.btn-store-icon img {
+		width: 25px;
+	}
+
+	.btn-store-text {
+		display: inline-block;
+		color: var(--title-color);
+		font-size: var(--h3-font-size);
+		text-transform: capitalize;
+		text-align: left;
+		margin-left: 1rem;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	.download {
+		max-width: 1400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

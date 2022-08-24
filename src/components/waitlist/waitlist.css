@@ -1,0 +1,102 @@
+.waitlist__description {
+	font-size: var(--small-font-size);
+	text-align: center;
+	padding: 0 2.5rem;
+}
+
+.waitlist__form {
+	margin: 3rem auto 2rem;
+}
+
+.waitlist__form div input,
+.form__flex div input {
+	background-color: #f8f8f8;
+	padding: 15px 25px;
+	border-radius: 50px;
+	border: 1px solid #11111118;
+	width: 100%;
+	margin-bottom: 0.8rem;
+	font-size: var(--small-font-size);
+}
+
+.input-error {
+	display: block;
+	color: var(--red-color);
+	padding-left: 1.5rem;
+	font-size: var(--smaller-font-size);
+	margin-bottom: 1rem;
+}
+
+.no-mt {
+	margin-top: -1rem;
+}
+.waitlist__form button {
+	display: flex;
+	margin: 0 auto;
+}
+
+.success-message {
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #0ca90c;
+	color: #fff;
+	padding: 1rem 1.5rem;
+	font-size: var(--small-font-size);
+}
+
+.show {
+	visibility: visible;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+	.waitlist__container h2 {
+		width: 450px;
+		margin: 0 auto 2rem;
+	}
+
+	.form__flex {
+		display: flex;
+		/* justify-content: center; */
+		column-gap: 0.8rem;
+	}
+
+	.waitlist__form div input[type="text"],
+	.waitlist__form div input[type="tel"] {
+		min-width: calc(225px - 0.4rem);
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.waitlist__form {
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 968px) {
+	.waitlist__container h2 {
+		width: 650px;
+	}
+
+	.waitlist__form {
+		width: 550px;
+		margin: 3rem auto 2rem;
+	}
+
+	.waitlist__form div input,
+	.form__flex div input {
+		padding: 20px 35px;
+	}
+
+	.waitlist__form div input[type="text"],
+	.waitlist__form div input[type="tel"] {
+		min-width: calc(275px - 0.4rem);
+	}
+}
